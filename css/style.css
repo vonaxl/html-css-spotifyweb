@@ -19,7 +19,6 @@ a:hover{
 
 /* left */
 #left{
-  padding: 20px 0 20px 0;
   background: #0A0A0D;
   color: white;
   height: 80vh;
@@ -29,15 +28,24 @@ a:hover{
   width: 20%;
   display: flex;
   flex-flow: column;
-  justify-content:space-between;
-  align-items: center;
+  padding:10px 0 10px 0;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+#left .box{
+  width: 100%;
+  margin: auto;
 }
 #left .txtbox{
   padding-top: 20px;
   padding-bottom: 20px;
 }
+#left .imgbox {
+  text-align: center;
+}
 #left img{
   filter: invert(100%);
+  width: calc(60% - 30px);
 }
 #left .txtbox img{
   width: 34px;
@@ -49,11 +57,10 @@ a:hover{
 #left .box:nth-child(2) a{
   padding: 5px;
   display: inline-block;
-  width: 100%;
+  width: calc(100% - 70px);
   border: 2px solid white;
   border-radius: 20px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 5px;
 }
 #left .box:nth-child(2) a:nth-child(1){
   background:white;

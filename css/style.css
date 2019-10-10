@@ -1,5 +1,7 @@
 /* general rules */
-
+li{
+  list-style: none;
+}
 /* /general rules */
 
 /* rules to be use many times */
@@ -17,6 +19,13 @@
 /* /left */
 
 /* right */
+#right{
+  padding-bottom: 20vh;
+}
+#right section:nth-child(odd){
+  background-color: gray;
+
+}
 /* /right */
 
 /* play */

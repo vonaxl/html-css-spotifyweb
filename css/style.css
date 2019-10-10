@@ -1,3 +1,32 @@
-body{
-  background: red;
+/* general rules */
+
+/* /general rules */
+
+/* rules to be use many times */
+/* /rules to be use many times */
+
+/* left */
+#left{
+  background: blue;
+  height: 80vh;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  width: 25%;
 }
+/* /left */
+
+/* right */
+/* /right */
+
+/* play */
+#play{
+  background: red;
+  height: 20vh;
+  position:fixed;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* /play */

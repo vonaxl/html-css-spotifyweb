@@ -1,4 +1,4 @@
-/* general rules */
+ /* general rules */
 
 li{
   list-style: none;
@@ -21,10 +21,8 @@ a:hover{
   background: #0A0A0D;
   color: white;
   height: 85vh;
-  position: fixed;
   z-index: 2;
   left: 0;
-  width: 20%;
   display: flex;
   flex-flow: column;
   padding:10px 0 10px 0;
@@ -65,7 +63,8 @@ a:hover{
 
 /* right */
 #right{
-  padding-bottom: 15vh;
+  padding: 2% 2% 15vh 2%;
+  background-image: linear-gradient(to right, #363449, #21202C);
 }
 #right section:nth-child(odd){
   background-color: gray;

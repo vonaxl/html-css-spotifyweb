@@ -7,23 +7,36 @@ a{
   text-decoration: none;
   color: gray;
   font-size: 13px;
+  font-weight:bold;
 }
 a:hover{
   text-decoration: none;
-  font-size: 15px;
+  color: white;
+}
+h2{
+  font-weight: bold;
   color: white;
 }
 /* /general rules */
 
-
+/* classes to used again and again */
+.nobg{
+  color: inherit;
+  background-color: inherit;
+  border: none;
+}
+/* /classes to used again and again */
 /* left */
+
 #left{
   background: #0A0A0D;
   color: white;
-  height: 85vh;
-  z-index: 2;
-  left: 0;
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  bottom: 15vh;
   flex-flow: column;
   padding:10px 0 10px 0;
   justify-content: space-between;
@@ -63,12 +76,35 @@ a:hover{
 
 /* right */
 #right{
-  padding: 2% 2% 15vh 2%;
+  padding: 2% 5% 14vh 10%;
   background-image: linear-gradient(to right, #363449, #21202C);
+  color: gray;
 }
-#right section:nth-child(odd){
-  background-color: gray;
+#right section{
+  padding: 2% 0 2% 0;
 }
+#right section .txtbox{
+  display: flex;
+  justify-content: space-between;
+}
+#right section .imgbox{
+  text-align: center;
+}
+#right section .imgbox li{
+  display: inline-block;
+  width: calc((100% / 6) - 10px);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#right section .imgbox li a{
+  color: white;
+}
+
+#right section .imgbox img{
+  width: 100%;
+  margin: 5px;
+}
+
 /* /right */
 
 /* play */

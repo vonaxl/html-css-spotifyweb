@@ -1,4 +1,7 @@
  /* general rules */
+ html {
+  scroll-behavior: smooth;
+}
 
 li{
   list-style: none;
@@ -35,6 +38,7 @@ h2{
   position: fixed;
   top: 0;
   left: 0;
+  width:  17%;
   z-index: 2;
   bottom: 15vh;
   flex-flow: column;
@@ -76,7 +80,7 @@ h2{
 
 /* right */
 #right{
-  padding: 2% 5% 14vh 10%;
+  padding: 2% 5% 14vh 5%;
   background-image: linear-gradient(to right, #363449, #21202C);
   color: gray;
 }
@@ -103,6 +107,9 @@ h2{
 #right section .imgbox img{
   width: 100%;
   margin: 5px;
+}
+#right section .imgbox img:hover{
+  filter: blur(3px);
 }
 
 /* /right */

@@ -50,7 +50,6 @@ main .pos{
   background: #0A0A0D;
   color: white;
   display: flex;
-  height: 85vh;
   flex-flow: column;
   padding:10px 0 7% 0;
   justify-content: space-between;
@@ -144,13 +143,6 @@ main .pos{
 /* play */
 #play{
   background: #282828;
-  position:fixed;
-  z-index: 200;
-  max-height: 15vh;
-  overflow: hidden;
-  bottom: 0;
-  left: 0;
-  right: 0;
   color: GRAY;
   padding: 10px 0 10px 0;
   display: flex;

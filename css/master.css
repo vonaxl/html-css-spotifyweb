@@ -44,18 +44,60 @@ body{
   z-index: 2;
   left: 0;
   top: 0;
-  min-width: 15vw;
   min-height: 80vh;
   background-color: #0A0A0D;
   display: flex;
   flex-flow: column;
-  justify-content: ;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 0;
 }
-#leftbox .box{
-  width: 50px;
-  height: 50px;
-  background: yellow;
+#leftbox img{
+  filter: invert(100%);
 }
+#leftbox .imgbox{
+  text-align: center;
+}
+#leftbox .imgbox img{
+  width: 50%;
+}
+
+#leftbox .txtbox{
+  margin: 20px auto;
+}
+
+#leftbox .txtbox a{
+  display: inline-block;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+#leftbox .txtbox a:hover{
+  color: white;
+  border-left: lightgreen 2px solid;
+}
+#leftbox .txtbox img{
+  width: 15%;
+}
+#leftbox .box:nth-child(2) .txtbox li a{
+  border: 2px solid white;
+  display: inline-block;
+  border-radius: 20px;
+  margin: 5px auto;
+  padding: 5px 30px;
+  width: 100%;
+}
+#leftbox .box:nth-child(2) .txtbox li:nth-child(1) a{
+  background: white;
+  color: gray;
+}
+#leftbox .box:nth-child(2) .txtbox li:nth-child(3) a{
+  border: none;
+}
+#leftbox .box:nth-child(2) .txtbox li:nth-child(4) a{
+  border: none;
+}
+
 
 #rightbox{
   padding-left: 15vw;

@@ -102,6 +102,7 @@ main .pos{
   background-image: linear-gradient(to right, #363449, #21202C);
   color: gray;
 }
+
 #right #tophead li a{
   padding-bottom: 0.5rem;
 }

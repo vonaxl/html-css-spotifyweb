@@ -2,7 +2,16 @@
  html {
   scroll-behavior: smooth;
 }
-
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 li{
   list-style: none;
 }
@@ -20,6 +29,10 @@ h2{
   font-weight: bold;
   color: white;
 }
+
+body{
+  background: #0A0A0D;
+}
 /* /general rules */
 
 /* classes to used again and again */
@@ -30,25 +43,27 @@ h2{
 }
 /* /classes to used again and again */
 /* left */
-
+main .pos{
+  position: relative;
+}
 #left{
   background: #0A0A0D;
   color: white;
   display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width:  17%;
-  z-index: 2;
-  bottom: 15vh;
+  height: 85vh;
   flex-flow: column;
-  padding:10px 0 10px 0;
+  padding:10px 0 7% 0;
   justify-content: space-between;
   overflow-y: auto;
 }
 #left .txtbox{
   padding-top: 20px;
   padding-bottom: 20px;
+}
+#left .txtbox ul li ul{
+  margin-top: 1rem;
+  overflow-y: auto;
+  max-height: 4rem;
 }
 #left .imgbox {
   text-align: center;
@@ -88,6 +103,13 @@ h2{
   background-image: linear-gradient(to right, #363449, #21202C);
   color: gray;
 }
+#right #tophead li a{
+  padding-bottom: 0.5rem;
+}
+#right #tophead li a:hover{
+  border-bottom: 2px solid lightgreen;
+}
+
 #right section{
   padding: 2% 0 2% 0;
 }
@@ -111,6 +133,7 @@ h2{
 #right section .imgbox img{
   width: 100%;
   margin: 5px;
+  transition: filter 1s;
 }
 #right section .imgbox img:hover{
   filter: blur(3px);
@@ -121,9 +144,10 @@ h2{
 /* play */
 #play{
   background: #282828;
-  height: 15vh;
   position:fixed;
-  z-index: 2;
+  z-index: 200;
+  max-height: 15vh;
+  overflow: hidden;
   bottom: 0;
   left: 0;
   right: 0;

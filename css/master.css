@@ -40,13 +40,13 @@ body{
 
 /* leftbox */
 #leftbox{
-  max-height: 80vh ;
+  max-height: 85vh ;
   background-color: #0A0A0D;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 2rem 0;
+  padding: 1.4rem 0;
   overflow-y: auto;
 }
 #leftbox img{
@@ -76,28 +76,34 @@ body{
 #leftbox .txtbox img{
   width: 15%;
 }
-#leftbox .box:nth-child(2) .txtbox li a{
-  border: 2px solid white;
+#leftbox .box .txtbox  ul{
+  overflow-y: auto;
+  height: 100px;
+}
+#leftbox .box:nth-child(2){
+  text-align: center;
+  align-self: center;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+#leftbox .box:nth-child(2) .txtbox a{
+  padding: 5px;
   display: inline-block;
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+  margin: 5px;
   border-radius: 20px;
-  margin: 5px auto;
-  padding: 5px 30px;
   width: 100%;
 }
-#leftbox .box:nth-child(2) .txtbox li:nth-child(1) a{
-  background: white;
-  color: gray;
+#leftbox .box:nth-child(2) .txtbox a:last-of-type{
+  background-color: black;
+  color: white;
 }
-#leftbox .box:nth-child(2) .txtbox li:nth-child(3) a{
-  border: none;
-}
-#leftbox .box:nth-child(2) .txtbox li:nth-child(4) a{
-  border: none;
-}
-
 
 #rightbox{
-  max-height: 80vh;
+  max-height: 85vh;
   overflow-y: auto;
   background-image: linear-gradient(to right, #363449, #21202C);
 }
@@ -107,7 +113,7 @@ body{
   left: 0;
   bottom: 0;
   color: white;
-  max-height: 20vh;
+  max-height: 15vh;
   padding: 1rem;
   background: #282828;
 }

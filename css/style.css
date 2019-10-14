@@ -54,6 +54,7 @@ main .pos{
   padding:10px 0 7% 0;
   justify-content: space-between;
   overflow-y: auto;
+  max-height: 85%;
 }
 #left .txtbox{
   padding-top: 20px;
@@ -182,3 +183,32 @@ main .pos{
   display: inline-block;
 }
 /* /play */
+
+@media (min-width: 768px) {
+
+  #right section .imgbox li{
+    display: inline-block;
+    width: calc((100% / 2) - 10px);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media (min-width: 992px) {
+  #right section .imgbox li{
+    display: inline-block;
+    width: calc((100% / 3) - 10px);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 1200px) {
+
+  #right section .imgbox li{
+    display: inline-block;
+    width: calc((100% / 6) - 10px);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+}

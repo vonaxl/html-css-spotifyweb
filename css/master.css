@@ -44,7 +44,7 @@ body{
   position: fixed;
   left: 0;
   top: 0;
-  max-height: calc(100% - 100px) ;
+  max-height: calc(100% - 98px) ;
   background-color: #0A0A0D;
   display: flex;
   flex-flow: column;
@@ -110,7 +110,7 @@ body{
   position: fixed;
   top: 0;
   right: 0;
-  max-height: calc(100% - 100px);
+  max-height: calc(100% - 98px);
   overflow-y: auto;
   background-image: linear-gradient(to right, #363449, #21202C);
 }

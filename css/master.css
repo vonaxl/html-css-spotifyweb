@@ -153,13 +153,37 @@ body{
 
 #bottombox{
   position: fixed;
+  display: flex;
+  justify-content: space-between;
   left: 0;
+  right: 0;
   bottom: 0;
   color: white;
-  max-height: 15vh;
   padding: 1rem;
   background: #282828;
 }
+
+#bottombox .col-2:first-of-type{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#bottombox .col-2:first-of-type img{
+  width: 25%;
+}
+#bottombox .col {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+#bottombox .col:nth-child(2) .txtbox .line{
+  display: inline-block;
+  width: 30vw;
+  border-bottom: 3px solid white;
+  margin-bottom:3px;
+}
+
 @media (min-width: 767.98px) {
   #rightbox section .imgbox li{
     display: inline-block;

@@ -41,7 +41,10 @@ body{
 
 /* leftbox */
 #leftbox{
-  max-height: 85vh ;
+  position: fixed;
+  left: 0;
+  top: 0;
+  max-height: calc(100% - 100px) ;
   background-color: #0A0A0D;
   display: flex;
   flex-flow: column;
@@ -104,7 +107,10 @@ body{
 }
 
 #rightbox{
-  max-height: 85vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  max-height: calc(100% - 100px);
   overflow-y: auto;
   background-image: linear-gradient(to right, #363449, #21202C);
 }
@@ -159,8 +165,7 @@ body{
   right: 0;
   bottom: 0;
   color: white;
-  max-height: 15vh;
-  overflow: hidden;
+  max-height: 100px;
   padding: 1rem;
   background: #282828;
 }

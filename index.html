@@ -262,7 +262,7 @@
       <!-- position fixed so outside on it's own -->
       <div id="bottombox" class="col-12">
 
-          <div class="col-2">
+          <div id="showme" class="col-2">
             <img src="img/7.png" alt="logo">
             <div class="txtbox">
               <a href="#">
@@ -277,15 +277,15 @@
               <ul class="list-inline">
                 <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i></a> </li>
                 <li class="list-inline-item"><a href="#"><i class="fas fa-step-backward"></a></i> </li>
-                <li class="list-inline-item"><a href="#"><i class="fas fa-play"></i></a> </li>
+                <li class="list-inline-item"><a href="#" onclick="canzone()"><i class="fas fa-play"></i></a> </li>
                 <li class="list-inline-item"><a href="#"><i class="fas fa-step-forward"></i></a> </li>
-                <li class="list-inline-item"><a href="#"><i class="fas fa-retweet"></i></a> </li>
+                <li class="list-inline-item"><a href="#" onclick="stop()"><i class="fas fa-retweet"></i></a> </li>
               </ul>
             </div>
             <div class="txtbox">
               0:00
               <div class="line">
-                <i class="fas fa-music"></i>
+                <i id=musicme class="fas fa-music"></i>
               </div>
               0:00
             </div>
@@ -304,6 +304,7 @@
           </div>
         </div>
       </div>
+      <script src="js/myscript.js" charset="utf-8"></script>
 
   </body>
 </html>

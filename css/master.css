@@ -1,7 +1,8 @@
 /* general rules */
-html {
- scroll-behavior: smooth;
+#rightbox {
+  scroll-behavior: smooth;
 }
+
 ::-webkit-scrollbar {
  width: 10px;
 }
@@ -61,6 +62,7 @@ body{
 
 #leftbox .txtbox{
   margin: 20px auto;
+  padding: 0 1rem;
 }
 
 #leftbox .txtbox a{
@@ -84,8 +86,7 @@ body{
   text-align: center;
   align-self: center;
   width: 100%;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 0 1rem;
 }
 #leftbox .box:nth-child(2) .txtbox a{
   padding: 5px;
@@ -108,6 +109,48 @@ body{
   background-image: linear-gradient(to right, #363449, #21202C);
 }
 
+#rightbox{
+  padding: 2% 5% 14vh 5%;
+  background-image: linear-gradient(to right, #363449, #21202C);
+  color: gray;
+}
+
+#rightbox #tophead li a{
+  padding-bottom: 0.5rem;
+}
+#rightbox #tophead li a:hover{
+  border-bottom: 2px solid lightgreen;
+}
+
+#rightbox section{
+  padding: 2% 0 2% 0;
+}
+#rightbox section .txtbox{
+  display: flex;
+  justify-content: space-between;
+}
+#rightbox section .imgbox{
+  text-align: center;
+}
+#rightbox section .imgbox li{
+  display: inline-block;
+  width: calc((100% / 1) - 10px);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#rightbox section .imgbox li a{
+  color: white;
+}
+
+#rightbox section .imgbox img{
+  width: 100%;
+  margin: 5px;
+  transition: filter 1s;
+}
+#rightbox section .imgbox img:hover{
+  filter: blur(3px);
+}
+
 #bottombox{
   position: fixed;
   left: 0;
@@ -116,4 +159,28 @@ body{
   max-height: 15vh;
   padding: 1rem;
   background: #282828;
+}
+@media (min-width: 767.98px) {
+  #rightbox section .imgbox li{
+    display: inline-block;
+    width: calc((100% / 2) - 10px);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 991.98px) {
+  #rightbox section .imgbox li{
+    display: inline-block;
+    width: calc((100% / 3) - 10px);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 1199.98px) {
+  #rightbox section .imgbox li{
+    display: inline-block;
+    width: calc((100% / 6) - 10px);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }

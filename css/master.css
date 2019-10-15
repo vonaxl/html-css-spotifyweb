@@ -180,11 +180,26 @@ body{
   justify-content: center;
   align-items: center;
 }
+#bottombox .col .txtbox ul li{
+  padding: 0 10px;
+  font-weight: bold;
+}
+#bottombox .col .txtbox ul li:nth-child(3) a{
+  padding: 5px 8px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
 #bottombox .col .txtbox .line{
+  position: relative;
   display: inline-block;
   width: 30vw;
   border-bottom: 3px solid white;
-  margin-bottom:3px;
+}
+#bottombox .col .txtbox .line i{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: music 6s infinite;
 }
 #bottombox .col-2:last-of-type .line{
   display: inline-block;
@@ -192,6 +207,50 @@ body{
   border-bottom: 3px solid white;
   margin-bottom:3px;
   margin-left: 5px;
+}
+/* animation */
+@keyframes music {
+  0%{
+    bottom: 10px;
+    left: 0;
+  }
+  14%{
+    bottom: 0;
+    left: 14%;
+    color: #9400D3;
+  }
+  28%{
+    bottom: 10px;
+    left: 28%;
+    color: #66199e;
+  }
+  42%{
+    bottom: 0;
+    left: 42%;
+    color: #0000FF;
+  }
+  56%{
+    bottom: 10px;;
+    left: 56%;
+    color: #00FF00;
+  }
+  70%{
+    bottom: 0;
+    left: 70%;
+    color: #FFFF00;
+  }
+  84%{
+    bottom: 10px;;
+    left: 84%;
+    color: #FF7F00;
+  }
+  100%{
+    bottom: 0;
+    left: 95%;
+    color: #FF0000;
+  }
+
+
 }
 
 /* media */

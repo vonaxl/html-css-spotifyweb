@@ -164,10 +164,9 @@ body{
 }
 
 #bottombox #showme{
-  opacity: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #bottombox .col-2:first-of-type li a{
   font-size: 20px;
@@ -257,10 +256,16 @@ body{
 
 /* media */
 
-@media (max-width:765px) {
+@media (max-width:769px) {
+  #leftbox{
+    display: none;
+  }
+  #rightbox section .imgbox img{
+    width: 70%;
+  }
 
   #bottombox .col-2:first-of-type{
-    display: none;
+    display: none !important;
   }
   #bottombox .col-2:last-of-type{
     display: none;

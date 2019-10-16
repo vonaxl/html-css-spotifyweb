@@ -88,7 +88,7 @@ body{
 }
 #leftbox .box .txtbox  ul{
   overflow-y: auto;
-  height: 100px;
+  height: 160px;
 }
 #leftbox .box:nth-child(2){
   text-align: center;

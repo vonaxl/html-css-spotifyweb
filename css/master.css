@@ -44,14 +44,19 @@ body{
   position: fixed;
   left: 0;
   top: 0;
+  bottom: 0;
+  width: 100%;
   max-height: calc(100% - 98px) ;
   background-color: #0A0A0D;
+  overflow-y: auto;
+}
+#leftbox .col-4{
+  height: 100%;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   align-items: flex-start;
   padding: 1.4rem 0;
-  overflow-y: auto;
 }
 #leftbox img{
   filter: invert(100%);
@@ -129,7 +134,7 @@ body{
 }
 
 #rightbox section{
-  padding: 2% 0 2% 0;
+  padding: 1rem 0;
 }
 #rightbox section .txtbox{
   display: flex;
